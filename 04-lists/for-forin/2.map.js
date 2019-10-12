@@ -1,4 +1,6 @@
 const service = require('./service');
+
+// prototype =  recurso global de determinado tipo
 Array.prototype.meuMap = function (callback){
     const novoArrayMapeado = [];
     for(let indice = 0; indice <= this.length - 1; indice++){
@@ -11,20 +13,20 @@ Array.prototype.meuMap = function (callback){
 
 async function main(){
     try {
-        const results = await service.obterPessoas('a');
+        const result = await service.obterPessoas('a');
         
         // const names = [];
-        // results.results.forEach(function (item){
+        // result.results.forEach(function (item){
         //     names.push(item.name)
         // })
 
-        // const names = results.results.map(function(pessoa){
+        // const names = result.results.map(function(pessoa){
         //     return pessoa.name
         // })
-        // map com arroy
-        // const names = results.results.map(pessoa => pessoa.name);
+        // map com arroy function
+        // const names = result.results.map(pessoa => pessoa.name);
 
-        const names = results.results.meuMap(function(pessoa, indice){
+        const names = result.results.meuMap(function(pessoa, indice){
             return `{${indice}} ${pessoa.name}`;
         })
 
