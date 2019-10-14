@@ -1,6 +1,7 @@
 {
-  "name": "for-forin",
+  "name": "01",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,14 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.19.0",
+    "nock": "^11.4.0"
   },
-<<<<<<< HEAD
-  "devDependencies": {},
-  "description": ""
-=======
   "devDependencies": {
-    "eslint": "^6.5.1"
+    "mocha": "^6.2.1"
   }
->>>>>>> 254f66b42dbc8d7d69de30e95ccc35cbaa6e83ee
 }
